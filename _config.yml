@@ -16,7 +16,7 @@ direction: ltr
 nav:
   home: /
   articles: /archives/
-  # projects: https://github.com/Yueby
+  projects: https://github.com/Yueby
   tag: /tags/
   category: /categories/
   search: /search/
