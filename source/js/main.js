@@ -19,7 +19,6 @@ $(document).ready(function() {
     $("#header > #nav > ul").toggleClass("responsive");
   });
 
-
   /**
    * Controls the different versions of  the menu in blog post articles 
    * for Desktop, tablet and mobile.
@@ -56,7 +55,7 @@ $(document).ready(function() {
      */
     if (menu.length) {
       $(window).on("scroll", function() {
-        var topDistance = menu.offset().top;
+        var topDistance = document.documentElement.scrollTop;// menu.offset().top;
 
         // hide only the navigation links on desktop
         if (!nav.is(":visible") && topDistance < 50) {
